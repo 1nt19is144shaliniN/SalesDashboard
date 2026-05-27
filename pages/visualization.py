@@ -8,7 +8,7 @@ st.set_page_config(page_title="Visualization & Statistics", layout="wide")
 def read_excel(file):
     return pd.read_excel(file)
 
-df = read_excel("Data/sales.xls")
+df = read_excel("sales.xls")
 df.columns = df.columns.str.strip()
 
 st.title("Visualization and Descriptive Statistics")
